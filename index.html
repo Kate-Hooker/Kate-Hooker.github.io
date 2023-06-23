@@ -1,9 +1,54 @@
-<html>
-  <head>
-    <title>My blog</title>
-  <body>
-    <h1>Kia ora Taiao! (Hello World!)</h1> 
-    <p> This is the beginning of my website home page.</p>
-    <p> It will eventually contain a list of links to all my blogs. </p>
-  </body>
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  
+  <link href="styles/main.css" rel="stylesheet" type="text/css"/>
+<title>ET go home!</title>
+<style>
+  .img-ufo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    animation: moveUpDown 2s infinite;
+  }
+  @keyframes moveUpDown {
+      0% {
+        top: 0;
+      }
+      50% {
+        top: 50px;
+      }
+      100% {
+        top: 0;
+      }
+    }
+  .wrapper {
+      text-align: center;
+    }
+
+</style>
+
+
+</head>
+
+<body>
+<div class="wrapper">
+<h1> Hello World</h1>
+</div>
+<div>
+<img class="img-ufo" src="blog/UFO.png" alt="questionable">
+</div>
+<div class="container">
+<div class="empty-column"></div>
+<div class="empty-column"></div>
+<a href=meet.html class="one-word-column"><span class="black-underline"><span class="hover-frontpage">meet.</span></a>
+<a href=teach.html class="one-word-column"><span class="hover-frontpage">teach.</span></a>
+<a href=learn.html class="one-word-column"><span class="hover-frontpage">learn.</span></a>
+<div class="empty-column"></div>
+<div class="empty-column"></div>
+</div>
+
+</body>
+
 </html>
