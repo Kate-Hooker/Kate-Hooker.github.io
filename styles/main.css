@@ -45,13 +45,13 @@
 }
 .one-word-column {
   flex: 1;
-  padding: 10px;
+  padding: 0;
   text-align: center;
-  background-color: black;
-  margin: 4px;
+  background-color: transparent;
+
   font-family: 'Courier New';
   width: 20%;
-  font-size: 200%;
+  font-size: 250%;
   color: white;
 }
 .hover-frontpage:hover {
@@ -100,7 +100,7 @@ a:visited {
   margin: 0;
 
   width: 60%;
-  font-size: 200%;
+  font-size: 180%;
   color: white;
 }
 .blog-writing {

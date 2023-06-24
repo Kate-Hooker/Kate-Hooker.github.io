@@ -6,6 +6,7 @@
     <meta charset="UTF-8" />
 
     <title>Margins, Borders and Padding</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="styles/main.css" rel="stylesheet" type="text/css" />
   <style>
     
@@ -28,44 +29,70 @@
         display: flex;
         justify-content: center; 
         align-items: center;
-
       }
-      .m-b-p-container-two{
+
+      .m-b-p-item {
+        flex: 1;
+        background-color: black;
+        font-family: 'Courier New';
+        border-color: black;
+        padding: 1%;
+        align-items: center;
+        justify-content: center; 
+        text-align: center;
+        color: white;
+      
+      }
+      .m-b-p-image {
+        flex: 1;
+        font-family: 'Courier New';
+        border-color: black;
+        padding: 0%;
+        align-items: center;
+        justify-content: center; 
+        text-align: center;
+        color: white;
+      }
+      
+      .m-b-p-container-three {
         display: flex;
         justify-content: center; 
         align-items: center;
       }
 
-
-      .m-b-p-item {
-        flex: 1;
-        background-color:darkslategrey;
-        font-family: 'Courier New';
-        border-color: black;
-        padding: 1%;
-        align-items: center;
+      .m-b-p-container-four{
+        display: flex;
         justify-content: center; 
-        text-align: center;
-        color: white;
-      
-      }
-      
-      .m-b-p-container-three {
-        flex: 1;
-        background-color:darkslategrey;
-        font-family: 'Courier New';
-        border-color: black;
-        padding: 1%;
         align-items: center;
-        justify-content: center; 
-        text-align: center;
-        color: white;
-      
       }
+      .square {
+      width: 80px;
+      height: 80px;
+      background-color: black;
+      border: 3px solid white;
+    }
+    .galaxy-box {
+      width: 100px;
+      height: 100px;
+      background-image: url("blog/spacebox.png");
+      background-size: cover;
+      border: 2px solid white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-      
+    .galaxy-box-content {
+      background-color: black;
+      font-family: 'Courier New';
+      color: white;
+      font-size: 85%;
+      padding: 2%;
+      text-align: center;
+    }
 
-      
+
+
   </style>
   
   
@@ -84,39 +111,65 @@
   ><span class="hover-frontpage">teach.</span></a>
   <br />
   <img class="img-planet" src="blog/planet.png" alt="questionable" />
-  <a style="padding-bottom: 5%" href="index.html" class="nav-bar-font"
+  <a style="padding-bottom: 1%" href="index.html" class="nav-bar-font"
     ><span class="hover-frontpage">go home.</span></a
   >  
   </div>
   <main>
-    <h1>Welcome to My Website</h1>
+    <h4 style="font-size: 160%; color: white; font-family: 'Courier New';">
+      <center>
+        <b>Margins &#11090; Borders &#11090; Padding</b>
+      </center>
+    </h4>
   </div>
+  <p style="color: white; font-family: 'Courier New'; padding-left: 30%; padding-right: 30%; text-align: center;">
+    <br>HTML formatting often uses boxes and grids to help elements fit together.</p></div>
   <div class="m-b-p-container">
   <div class="m-b-p-item"></div>
-  <div class="m-b-p-item">HTML formatting often uses boxes and grids to help elements fit together.<br><br> 
+  <div class="m-b-p-item"><br> 
 
     <b>Margins</b>, <b>borders</b> and <b>padding</b> are all part of the vocabulary we use to refine these objects. 
      </div>
-  <div class="m-b-p-item">A simple box graphic<br></div>  
+  <div class="square"></div>  
   <div class="m-b-p-item"></div>
   </div>
 
-  <div class="m-b-p-container-two">
-    <div class="m-b-p-item"></div>  
-    <div class="m-b-p-item">black box white border</div>  
-    <div class="m-b-p-item">
-      A <b>border</b> wraps around the periphery of an object. <br><br>It defines the exact parameters of the shape. HTML allows you to define how thick it is, 
-      its colour and what style of line you want. <br><br>In this example the border is indicated with white.
-      </div>  
+  <div>
+  
+    <p style="color: white; font-family: 'Courier New'; padding-left: 30%; padding-right: 30%; text-align: center;">
+      <br><br>A <b>border</b> wraps around the periphery of an object.
+         It defines the exact parameters of the shape. HTML allows you to define how thick it is, 
+      its colour and what style of line you want.
+      <br>Boxes often have some content inside them- <b>padding</b> describes how much space is left between the content and the border. 
+         </div>
       <div class="m-b-p-item"></div> 
-    </div>
-   
+    </p>  
+    </div>  
 
     <div class="m-b-p-container-three"> 
       <div class="m-b-p-item"></div> 
+      <div class="galaxy-box" >
+        <div class="galaxy-box-content">
+          content.
+        </div>
+      </div> 
+      <div class="m-b-p-item">The <b>padding</b> is indicated by the space between the black text background and the white border.</div>
       <div class="m-b-p-item"></div> 
-      <div class="m-b-p-item"></div>
-      <div class="m-b-p-item"></div> 
+      </div>
+      <div>
+  
+        <p style="color: white; font-family: 'Courier New'; padding-left: 30%; padding-right: 30%; text-align: center;">
+          <br>A <b>margin</b> is a designated space outside the border that cannot be filled by other elements, like a forcefield!<br><br>
+          Here is a white square, with a black border and white margin around it: 
+        </p>  
+        </div>  
+      <div class="m-b-p-container-four"> 
+        <div class="m-b-p-item"></div>
+        
+        <div class="m-b-p-item">It helps give a visual break between one object and another. </div>
+        <div style="font-size: 500%; color: white;">&#x25A3;</div>
+        <div class="m-b-p-item"></div> 
+        </div>
 
   </main>
   <p>
