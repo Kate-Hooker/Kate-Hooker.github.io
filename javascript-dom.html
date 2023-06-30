@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <title>DOM blog</title>
+    <style>
+      .nav-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex flex-end;
+      }
+      img {
+        max-width: 10%;
+        padding-left: 4%;
+        padding-bottom: 1%;
+      }
+      .text {
+        width: 100%;
+        align: right;
+      }
+
+      p {
+        font-family: 'Courier New';
+        padding-left: 20%;
+        padding-right: 20%;
+        color: white;
+        text-size-adjust: 120%;
+      }
+      h4 {
+        font-family: 'Courier New';
+        padding-left: 20%;
+        padding-right: 20%;
+        color: white;
+        text-size-adjust: 140%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-container" style="padding-left: 0">
+      <p><br /></p>
+      <a href="meet.html" class="nav-bar-font"
+        ><span class="hover-frontpage">meet.</span></a
+      ><br />
+      <a href="learn.html" class="nav-bar-font"
+        ><span class="hover-frontpage">learn.</span></a
+      ><br />
+      <a href="teach.html" class="nav-bar-font"
+        ><span class="hover-frontpage">teach.</span></a
+      >
+      <br />
+      <img class="img-planet" src="blog/planet.png" alt="questionable" />
+      <a style="padding-bottom: 5%" href="index.html" class="nav-bar-font"
+        ><span class="hover-frontpage">go home.</span></a
+      >
+    </div>
+
+    <h4 style="font-size: 140%">
+      <center>
+        <br />
+        <b> &#11090; Javascript and the DOM &#11090;</b>
+      </center>
+    </h4>
+
+    <p>
+      <br />
+      <b>OBJECTIVE 1: An analogy to describe JavaScript and its relationship to HTML and CSS.</b>
+      <br /><br />
+
+
+      Creating a website is like building a house. <br /><br />HTML is your structural blueprint - it tells 
+      you where the doors and windows go (via site navigation, links and images) designates areas 
+      for further development (with headings like < h1 > Kitchen </ h1 >) and when followed will 
+      create a
+       very functional, plain basic structure.<br /><br />
+      CSS is your interior designer, it manages colour schemes and makes sure your art is framed just
+       the right way and sat in just the right place. It make sure that your design fits the rules of 
+       cross compatible functionality and aesthetic satisfaction. <br /><br />
+      Javascript is your pack of tradies that comes in and makes sure theres water flowing in the 
+      pipes and electricity running to every switch. The tradies animate the space by providing 
+      areas where people can interact with the house, adding on/off switches and appliances that 
+      make the space infinitely more useful. <br /><br />
+      The DOM is the site Foreman - the Foreman is able to understand the three pillars of the 
+      building process and is able to structure the building plans in a way that allows all three 
+      of them to understand each other and interact. <br /><br />The DOM is able to influence all aspects of 
+      the build, adjust the plans from the outside if necessary and allows all parties involved 
+      in building the house to tweak one-another's work for optimum performance. <br /><br />It particularly 
+      helps facilitate the tradies who come in at the latter stage of the build and allows them to
+       pinpoint exactly what parts of the house need to be worked on (the HTML blueprint includes 
+       markers that will need activation via code in order to become useful, like wall sockets that 
+       will need wiring and light sockets that will need to be functionally linked to on/off 
+       switches to become useful, and pinpad security alarms that will need to be programmed 
+       to only respond to a specific input code)<br /><br /><br /><br />
+      <b>OBJECTIVE 2: Describe what the DOM is and an example of how you might interact with it.</b><br /><br />
+      The Document Object Model allows javascript and CSS to style and activate the structure that is 
+      created using html code. <br /><br />
+      The DOM transcribes HTML into a logic structure that allows javascript to read and alter whats 
+      happening on the page its designing. <br />It does this by understanding how the starting tags (< p >) 
+        and the ending tags (< /p >) within HTML contain specific data with specific purposes, and it 
+        uses tags, like ID, type and class to link that data to the changes being made in the 
+        javascript. <br /><br />
+      Javascript adds functionality like being able to react to a mouse click, alter the HTMLs style, 
+      changes its properties and understands the objects being created and manipulated by the code. 
+      For every HTML script there is a DOM file that allows javascript to act on it and react to it, 
+      we make this happen by changing the methods, properties and sub objects with the DOM. <br /><br />
+      One particularly vital facet of interactivity is when javascript uses eventlisteners. 
+      Eventlisteners give javascript the ability to trigger certain code functions based on user 
+      driven events like a mouse double clicking a button. This is vital in web design and only 
+      able to happen when theres clear communication between the HTML and javascript, as the button 
+      would be an HTML object, but its ability to be activated and the code pathway it would follow 
+      once activated would be all javascript driven.<br /><br /><br /><br /> 
+      
+      
+      
+      
+      
+      
+      <b>OBJECTIVE 3:Explain what functions are and why they are helpful.</b><br /><br />
+      In javascript a function is a piece of code that actively changes the outcome of another. 
+      A function must be called on to begin running and performs a task immediately upon its 
+      execution.<br /><br />
+
+      Functions are useful for many reasons - once they have been defined in code they can be 
+      called upon to do the same task as many times as theyre needed  - this saves repetitive 
+      coding. <br /><br />
+      They can receive a variety of variables and perform many different processing activities 
+      depending on what code is written into them - they are capable of housing conditional 
+      statements (ie producing an outcome that can help redirect the flow of the code in a 
+      completely different direction if needed) and generally are the pieces of code where 
+      the most change and action happens.<br /><br /><br /><br />
+      
+      
+      <b>OBJECTIVE 4:Explain control flow and loops using an example process from everyday life, for example, 
+      'waking up' or 'brushing your teeth' (but not those)</b><br /><br />
+      By default javascript executes from top to bottom, line by line, which is good and 
+      logical 
+      but not practical once you start making complex programmes. <br /><br />Code needs to be flexible and 
+      applicable to many different sets of circumstances and often we need to have our code make 
+      choices about how it will behave based on the information it gathers as it runs.<br /><br />
+      We use conditional statements where we ask our code to generate one outcome if a 
+      certain condition is met, and a completely different one if its not, and loops where we 
+      apply similar code repetitively to an array of items to help sort them or process all of 
+      them in a specific way. The code runs and processes, making decisions as it goes and calculates 
+      its own pathway to one of many outcomes. <br /><br />
+      When we talk about control flow we’re talking about the way we build our code to 
+      execute certain sections and pass over certain sections depending on whatever 
+      input it has taken in. It is the control we have over the codes decision making 
+      processes that we build in and means we can refine the codes functionality and efficiency. <br /><br />
+      If we were writing a code to help us decide have for dessert for tonight we would apply 
+      control flow to the decision making process in many ways - perhaps first asking ourselves 
+      if we’re hungry and want it (if not then skip dessert) if we have options, what we feel like 
+      having and how healthy we need to be. <br /><br />If there are dessert options a variety of loops could 
+      be applied to the options depending on what your snacking criteria is - if someone is 
+      hungry and healthy a loop could be applied to find the biggest healthiest dessert option, <br /><br />
+      if someone is hungry, doesn't care about health and a different loop could check all 
+      the possible dessert options and deliver the largest most calorically dense portion. <br /><br /><br /><br />
+      
+      
+      <b>OBJECTIVE 5: Explain the difference between accessing data from arrays and objects.</b><br /><br />
+      An array is a list of data, like [10,17,19] or [Chicken’, ‘Pork’, ‘Lamb’]<br /><br />
+      It can hold any sort of data (integers, mixed data varieties, strings, objects) and allows for 
+      large lists of information to be passed around a code and processed en masse. Containing data 
+      in arrays has many benefits in coding - mostly because once in an array it is easy to us code to 
+      go through each piece of data in and array and analyse or change it without having to modify each 
+      piece individually. <br /><br />Arrays are flexible and can be any length and can be manipulated easily with 
+      code. <br /><br />
+      An object is a single structured thing that has multiple established variables and methods 
+      that all help 
+      define the objects functionality in the code. If we have a group of objects with similarly 
+      structured variables it 
+      makes it much easier to manipulate their data using arrays because you can ask an array to 
+      iterate over a single facet of the object. <br /><br />
+      Say you have 5 employees with different salaries, tax rates and names - your accounting code 
+      would work by building a structured ‘employee’ object containing the three pieces of data.<br /><br />
+      Once 
+      the objects were defined it would be much easier to manipulate them with arrays - 
+      say there was a payrise being pushed out to the whole business and you needed to know how much 
+      extra money it would cost the business and whos tax rates would be effected. <br /><br />If you were coding each 
+      employee separately and treating their taxcodes and payrates as individual pieces of data you 
+      would have to go to each individual persons file, first calculate the pay rise, then possible tax increase
+       and then store and add up the extra money totals at the end.<br /><br />
+      If you are storing their data as objects you could just write a loop that traverses the 
+      whole company calculating the payrise and cost to the company, then a second loop that 
+      checks on taxcodes, as opposed to the 15+ lines of new code you would have to generate 
+      without grouping the data and variables. <br /><br />
+      
+    </p>
+  </body>
+</html>
