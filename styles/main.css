@@ -5,7 +5,7 @@
 }
 
 .img-ufo {
-  width: 200px;
+  width: 15%;
   background-image: url(blog/UFO.png);
   background-size: contain;
   background-position: center;
@@ -87,8 +87,9 @@ a:visited {
   color: white;
 }
 .img-planet {
-  width: auto;
-  height: 100%;
+  height: 5%;
+  width: 5%;
+  padding-left: 3%;
 }
 
 .blog-intro {
@@ -105,7 +106,7 @@ a:visited {
 }
 .blog-writing {
   text-align: center;
-  background-color: black;
+  background-color: transparent;
   padding: 0;
   padding-top: 0%;
   font-family: 'Courier New';
@@ -125,5 +126,81 @@ a:visited {
 
   width: 100%;
   font-size: 140%;
+  color: white;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.text {
+  width: 100%;
+  align: left;
+}
+
+.img-alien {
+  display: block;
+  margin: 0 auto;
+  width: 9%;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.img-abduct {
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-compas {
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+}
+
+.blog-writing-learn {
+  text-align: center;
+  background-color: transparent;
+  padding: 0;
+  padding-top: 3%;
+  font-family: 'Courier New';
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  font-size: 120%;
+  color: white;
+}
+
+.blog-writing-teach {
+  text-align: center;
+  background-color: transparent;
+  padding: 0;
+  padding-top: 3%;
+  font-family: 'Courier New';
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  font-size: 130%;
+  color: white;
+}
+
+.blog-writing-meet {
+  text-align: center;
+  background-color: transparent;
+  padding: 0;
+  font-family: 'Courier New';
+  margin: 0;
+  text-align: center;
+  font-size: 110%;
   color: white;
 }
