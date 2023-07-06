@@ -204,3 +204,15 @@ h1 {
   font-size: 110%;
   color: white;
 }
+
+.blog-writing-with-padding {
+  text-align: left;
+  background-color: transparent;
+  padding-left: 17%;
+  padding-right: 17%;
+  padding-top: 3%;
+  font-family: 'Courier New';
+  margin: 0;
+  font-size: 100%;
+  color: white;
+}
