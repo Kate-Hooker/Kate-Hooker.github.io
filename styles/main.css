@@ -234,3 +234,79 @@ p {
   padding-top: 3%;
   padding-bottom: 1%;
 }
+
+.m-b-p-image {
+  flex: 1;
+  font-family: 'Courier New';
+  border-color: black;
+  padding: 0%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.m-b-p-container-three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.m-b-p-container-four {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.square {
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  border: 3px solid white;
+}
+.galaxy-box {
+  width: 100px;
+  height: 100px;
+  background-image: url('../blog/spacebox.png');
+  background-size: cover;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.galaxy-box-content {
+  background-color: black;
+  font-family: 'Courier New';
+  color: white;
+  font-size: 85%;
+  padding: 2%;
+  text-align: center;
+}
+
+.m-b-p-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.m-b-p-item {
+  flex: 1;
+  background-color: black;
+  font-family: 'Courier New';
+  border-color: black;
+  padding: 1%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.m-b-p-text {
+  text-align: center;
+  background-color: transparent;
+  padding-left: 30%;
+  padding-right: 30%;
+  font-family: 'Courier New';
+  font-size: 100%;
+  color: white;
+}
